@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,233,233,0.8660714285714286) 100%);
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            border-bottom: 2px solid #007BFF;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav img {
+            height: 80px;
+        }
+
+        .container {
+            padding-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-right: 600px;
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 30px;
+        }
+
+        .ten, .twelve {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between; 
+            height: 500px;
+            padding: 0 20px;
+        }
+
+        .stu, .stud {
+            margin: 0px 20px;
+            background-color: transparent;
+            height: 100%; 
+            box-shadow: 0px 4px 15px rgba(6, 6, 6, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .stu:hover, .stud:hover {
+            transform: scale(1.05);
+        }
+
+        .tenlogo, .tenlogo {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            font-size: 30px;
+            font-style: italic;
+            padding-top: 40px;
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .description, .descript {
+            width: 70%;
+            background-color: transparent;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: left;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .start2 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .start2:hover {
+            background-color: #45a049;
+        }
+        footer{margin-top: 18px;
+     background-color: #000000ff;
+     position: relative;
+     width: 100%;
+     height: 350px;
+     padding: 3rem 1rem;
+}
+.containeryy {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    min-width: 250px;
+    color:#f2f2f2f2;
+    font-family: poppins;
+    padding:0 2rem;
+}
+.col .logo{
+    width: 100px;
+    margin-bottom:25px;
+}
+.col h3{
+    color:#ff014fff;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.col h3::after{
+    content: '';
+    height:3px;
+    width:0px;
+    background-color: #ff014fff;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+    width:30px
+}
+.col .social a i{
+    color:#ff014fff;
+    margin-top:2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter:grayscale(25);
+}
+.col .links a{
+    display: block;
+    text-decoration: none;
+    color:#f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content:'';
+    height: 16px;
+    width:3px;
+    position: absolute;
+    top:5px;
+    left:-10px;
+    background-color: #ff014fff;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color:#ff014fff;
+}
+.col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .contact-details i{
+    margin-right:15px;
+}
+.row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 0;
+}
+.row .form input{
+    background-color: #1a1c20ff;
+    border:0;
+    outline:none;
+    padding:14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form button{
+    padding:14px 20px;
+    border:0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ff014fff;
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+}
+@media(max-width:768px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <img src="LogoMakerCa-1731770225979__1_-removebg-preview.png" alt="CareerNest Logo">
+        <div class="container">
+            <h1>Student Section</h1>
+        </div>
+    </nav>
+</header>
+
+<div class="ten">
+    <div class="stu">
+        <img src="ten-kids-with-number-ten-cartoon_1308-103026 copy.avif" alt="10 logo" class="tenlogo">
+        <p class="content">Stream to choose after Class 10.</p>
+        <a class="start2" href="ten.htm">Click Here</a>
+    </div>
+    <div class="description">
+        <p>
+            After completing Class 10, there are numerous career options to consider, depending on your interests, skills, and long-term goals. At this stage, you can either continue with traditional education or explore vocational and skill-based career paths. Many students choose to pursue further studies in streams like Science, Commerce, or Arts, which open up a wide range of options for higher education in fields like engineering, medicine, law, business, and social sciences.
+        </p>
+    </div>
+</div>
+
+<div class="twelve">    
+    <div class="descript">
+        <p>
+            Completing 12th grade opens a world of opportunities for students. Those with a science background can explore careers in engineering, medicine, or research. Engineering aspirants can specialize in fields like computer science, mechanical, civil, or electronics, leading to roles in technology, construction, or innovation. Commerce students can pursue careers in finance, accounting, or management through courses like B.Com, BBA, or CA. Arts students have exciting options in journalism, design, mass communication, or law. Additionally, students from all streams can explore emerging fields like data science, AI, digital marketing, or entrepreneurship. Carefully researching courses and colleges is essential for making the right choice.
+        </p>
+    </div>
+    <div class="stud">
+        <img src="Class_12__onlinestudywith.us_-removebg-preview.png" alt="12 logo" class="tenlogo">
+        <p class="content">Tips to score Decent marks and Career to choose After Class 12</p>
+        <a class="start2" href="twelvepcm.html">Click Here</a>
+    </div>
+</div>
+<footer>
+    <div class="containeryy">
+        <div class="row">
+              <div class="col" id="company">
+                  <img src="LogoMakerCa-1731770225979__1_-removebg-preview.png" alt="" class="logo">
+                  <p>
+                    We are specialized in designings, make your business a brand.
+                    Try our premium services.
+                  </p>
+                  <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+
+
+              <div class="col" id="services">
+                 <h3>Services</h3>
+                 <div class="links">
+                    <a href="#">For Students</a>
+                    <a href="#">Exams</a>
+                    <a href="#">Resources</a>
+                    <a href="#">Entertainment</a>
+                 </div>
+              </div>
+
+              <div class="col" id="useful-links">
+                 <h3>Links</h3>
+                 <div class="links">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Our Policy</a>
+                    <a href="#">Help</a>
+                 </div>
+              </div>
+
+              <div class="col" id="contact">
+                  <h3>Contact</h3>
+                  <div class="contact-details">
+                     <i class="fa fa-location"></i>
+                     <p>KIET, Ghaziabad <br> UP, INDIA</p>
+                  </div>
+                  <div class="contact-details">
+                     <i class="fa fa-phone"></i>
+                     <p>+91-7914416162</p>
+                  </div>
+              </div>
+        </div>
+
+        <div class="row">
+              <div class="form">
+                <form action="">
+                    <input type="text" placeholder="Email here...">
+                    <button><i class="fa fa-paper-plane"></i></button>
+                </form>
+              </div>
+        </div>
+
+    </div>
+ </footer>
+
+</body>
+</html>

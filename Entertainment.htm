@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment | CareerGaze</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <style>
+ 
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+  }
+  
+  /* Header */
+  header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 10px 20px;
+      border-bottom: 2px solid #ddd;
+  }
+  
+  header img {
+      height: 60px;
+  }
+  
+  .container a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+  }
+  
+  .container a:hover {
+      color: #007BFF;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+      text-align: center;
+      background: url('bgimg.webp') no-repeat center center/cover;
+      color: white;
+      padding: 50px 20px;
+  }
+  
+  .hero-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+  }
+  
+  /* Features Section */
+  .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 20px;
+  }
+  
+  .card {
+      background: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      max-width: 300px;
+      transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+      transform: scale(1.05);
+  }
+  
+  .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+  }
+  
+  .card h3 {
+      font-size: 1.5rem;
+      color: #007BFF;
+      margin: 15px 0;
+  }
+  
+  .card p {
+      font-size: 1rem;
+      padding: 0 10px 20px;
+      color: #555;
+  }
+  
+  .card .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      background: #007BFF;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+  }
+  
+  .card .btn:hover {
+      background: #0056b3;
+  }
+  
+  footer{
+     background-color: #000000ff;
+     position: relative;
+     width: 100%;
+     min-height: 350px;
+     padding: 3rem 1rem;
+}
+.containeryy {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    min-width: 250px;
+    color:#f2f2f2f2;
+    font-family: poppins;
+    padding:0 2rem;
+}
+.col .logo{
+    width: 100px;
+    margin-bottom:25px;
+}
+.col h3{
+    color:#ff014fff;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.col h3::after{
+    content: '';
+    height:3px;
+    width:0px;
+    background-color: #ff014fff;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+    width:30px
+}
+.col .social a i{
+    color:#ff014fff;
+    margin-top:2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter:grayscale(25);
+}
+.col .links a{
+    display: block;
+    text-decoration: none;
+    color:#f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content:'';
+    height: 16px;
+    width:3px;
+    position: absolute;
+    top:5px;
+    left:-10px;
+    background-color: #ff014fff;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color:#ff014fff;
+}
+.col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .contact-details i{
+    margin-right:15px;
+}
+.row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 0;
+}
+.row .form input{
+    background-color: #1a1c20ff;
+    border:0;
+    outline:none;
+    padding:14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form button{
+    padding:14px 20px;
+    border:0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ff014fff;
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+}
+@media(max-width:768px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+  
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <img src="LogoMakerCa-1731770225979__1_-removebg-preview.png" alt="CareerGaze Logo">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="choosestreamexam.html">Exams</a>
+            <a href="Resources.htm">Resources</a>
+            <a href="Entertainment.htm">Entertainment</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html" class="start1">Log In</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="hero-section">
+        <h1>Unwind and Learn with CareerGaze</h1>
+        <p>Explore quizzes, trivia, and games to relax while staying sharp!</p>
+    </div>
+
+    <section class="features">
+        <div class="card">
+            <img src="quiz.png" alt="Quiz Icon">
+            <h3>Interactive Quizzes</h3>
+            <p>Test your knowledge and learn new things with fun quizzes!</p>
+            <a href="#" class="btn">Take a Quiz</a>
+        </div>
+        <div class="card">
+            <img src="trivia.png" alt="Trivia Icon">
+            <h3>Trivia Challenges</h3>
+            <p>Discover fascinating facts and challenge your friends.</p>
+            <a href="#" class="btn">Play Trivia</a>
+        </div>
+        <div class="card">
+            <img src="game.png" alt="Games Icon">
+            <h3>Skill Games</h3>
+            <p>Play games designed to enhance your skills and creativity.</p>
+            <a href="https://poki.com/en/educational?msockid=346a24e9bd45696834fe3042bcb768ad" class="btn" target="blank">Start Playing</a>
+        </div>
+    </section>
+</main>  <footer>
+    <div class="containeryy">
+        <div class="row">
+              <div class="col" id="company">
+                  <img src="LogoMakerCa-1731770225979__1_-removebg-preview.png" alt="" class="logo">
+                  <p>
+                    We are specialized in designings, make your business a brand.
+                    Try our premium services.
+                  </p>
+                  <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+
+
+              <div class="col" id="services">
+                 <h3>Services</h3>
+                 <div class="links">
+                    <a href="#">For Students</a>
+                    <a href="#">Exams</a>
+                    <a href="#">Resources</a>
+                    <a href="#">Entertainment</a>
+                 </div>
+              </div>
+
+              <div class="col" id="useful-links">
+                 <h3>Links</h3>
+                 <div class="links">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Our Policy</a>
+                    <a href="#">Help</a>
+                 </div>
+              </div>
+
+              <div class="col" id="contact">
+                  <h3>Contact</h3>
+                  <div class="contact-details">
+                     <i class="fa fa-location"></i>
+                     <p>KIET, Ghaziabad <br> UP, INDIA</p>
+                  </div>
+                  <div class="contact-details">
+                     <i class="fa fa-phone"></i>
+                     <p>+91-7914416162</p>
+                  </div>
+              </div>
+        </div>
+
+        <div class="row">
+              <div class="form">
+                <form action="">
+                    <input type="text" placeholder="Email here...">
+                    <button><i class="fa fa-paper-plane"></i></button>
+                </form>
+              </div>
+        </div>
+
+    </div>
+ </footer>
+</body>
+</html>

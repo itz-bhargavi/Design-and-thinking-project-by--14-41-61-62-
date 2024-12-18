@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerGaze</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        nav {
+            height: 100px;
+            background-color: #007BFF;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .faq-section {
+            background-color: #f9f9f9;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        .faq-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #007BFF;
+            text-align: center;
+        }
+        .faq-container {
+            margin-top: 20px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: #007BFF;
+            transition: color 0.3s;
+        }
+        .faq-question:hover {
+            color: #0056b3;
+        }
+        .faq-answer {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #555;
+            display: none;
+        }
+        .faq-answer.visible {
+            display: block;
+        }
+        footer{
+     background-color: #000000ff;
+     position: relative;
+     width: 100%;
+     min-height: 350px;
+     padding: 3rem 1rem;
+}
+.containeryy {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    min-width: 250px;
+    color:#f2f2f2f2;
+    font-family: poppins;
+    padding:0 2rem;
+}
+.col .logo{
+    width: 100px;
+    margin-bottom:25px;
+}
+.col h3{
+    color:#ff014fff;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.col h3::after{
+    content: '';
+    height:3px;
+    width:0px;
+    background-color: #ff014fff;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+    width:30px
+}
+.col .social a i{
+    color:#ff014fff;
+    margin-top:2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter:grayscale(25);
+}
+.col .links a{
+    display: block;
+    text-decoration: none;
+    color:#f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content:'';
+    height: 16px;
+    width:3px;
+    position: absolute;
+    top:5px;
+    left:-10px;
+    background-color: #ff014fff;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color:#ff014fff;
+}
+.col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .contact-details i{
+    margin-right:15px;
+}
+.row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 0;
+}
+.row .form input{
+    background-color: #1a1c20ff;
+    border:0;
+    outline:none;
+    padding:14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form button{
+    padding:14px 20px;
+    border:0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ff014fff;
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+}
+@media(max-width:768px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+    </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.htm">About Us</a>
+        <a href="Resources.htm">Resources</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+<main>
+    <div class="content">
+        <h1>Welcome to CareerGaze</h1>
+        <p>Your ultimate partner for career and education guidance.</p>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">1. How do I choose the right career path?</div>
+                <div class="faq-answer">
+                    Choosing the right career path involves assessing your interests, skills, and values. Research different careers, seek mentorship, and consider career counseling to make an informed decision.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">2. What are the best study tips for exams?</div>
+                <div class="faq-answer">
+                    Create a study schedule, focus on understanding concepts rather than rote memorization, take regular breaks, and practice past papers. Avoid distractions and prioritize active learning techniques.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">3. How can I secure scholarships for higher education?</div>
+                <div class="faq-answer">
+                    Research scholarship opportunities early, maintain excellent academic records, participate in extracurricular activities, and craft a compelling application. Tailor each application to the scholarship criteria.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">4. What skills are essential for job placements?</div>
+                <div class="faq-answer">
+                    Key skills include communication, teamwork, problem-solving, adaptability, and technical expertise in your field. Build a strong resume and prepare for interviews to enhance your chances.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">5. How do I prepare for competitive exams?</div>
+                <div class="faq-answer">
+                    Understand the exam syllabus and pattern, create a study timetable, take mock tests, and revise regularly. Seek guidance from experts or join preparatory courses if needed.
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="containeryy">
+        <div class="row">
+              <div class="col" id="company">
+                  <img src="LogoMakerCa-1731770225979__1_-removebg-preview.png" alt="" class="logo">
+                  <p>
+                    We are specialized in designings, make your business a brand.
+                    Try our premium services.
+                  </p>
+                  <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+
+
+              <div class="col" id="services">
+                 <h3>Services</h3>
+                 <div class="links">
+                    <a href="#">For Students</a>
+                    <a href="#">Exams</a>
+                    <a href="#">Resources</a>
+                    <a href="#">Entertainment</a>
+                 </div>
+              </div>
+
+              <div class="col" id="useful-links">
+                 <h3>Links</h3>
+                 <div class="links">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Our Policy</a>
+                    <a href="#">Help</a>
+                 </div>
+              </div>
+
+              <div class="col" id="contact">
+                  <h3>Contact</h3>
+                  <div class="contact-details">
+                     <i class="fa fa-location"></i>
+                     <p>KIET, Ghaziabad <br> UP, INDIA</p>
+                  </div>
+                  <div class="contact-details">
+                     <i class="fa fa-phone"></i>
+                     <p>+91-7914416162</p>
+                  </div>
+              </div>
+        </div>
+
+        <div class="row">
+              <div class="form">
+                <form action="">
+                    <input type="text" placeholder="Email here...">
+                    <button><i class="fa fa-paper-plane"></i></button>
+                </form>
+              </div>
+        </div>
+
+    </div>
+ </footer>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.classList.toggle('visible');
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Stream</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        footer{
+     background-color: #000000ff;
+     position: relative;
+     width: 100%;
+     min-height: 350px;
+     padding: 3rem 1rem;
+}
+.containeryy {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    min-width: 250px;
+    color:#f2f2f2f2;
+    font-family: poppins;
+    padding:0 2rem;
+}
+.col .logo{
+    width: 100px;
+    margin-bottom:25px;
+}
+.col h3{
+    color:#ff014fff;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.col h3::after{
+    content: '';
+    height:3px;
+    width:0px;
+    background-color: #ff014fff;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+    width:30px
+}
+.col .social a i{
+    color:#ff014fff;
+    margin-top:2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter:grayscale(25);
+}
+.col .links a{
+    display: block;
+    text-decoration: none;
+    color:#f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content:'';
+    height: 16px;
+    width:3px;
+    position: absolute;
+    top:5px;
+    left:-10px;
+    background-color: #ff014fff;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color:#ff014fff;
+}
+.col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .contact-details i{
+    margin-right:15px;
+}
+.row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 0;
+}
+.row .form input{
+    background-color: #1a1c20ff;
+    border:0;
+    outline:none;
+    padding:14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form button{
+    padding:14px 20px;
+    border:0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ff014fff;
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+}
+@media(max-width:768px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="LogoMakerCa-1731770225979__1_-removebg-preview.png" alt="CareerNest Logo">
+            <h1>Biology Stream</h1>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Explore Your Future with Biology!</h3>
+            <p>A biology background offers diverse career opportunities across healthcare, research, environmental sciences, biotechnology, and more. <br><br>Here's a categorized list of career options for biology students:</p>
+        </section>
+
+        <section>
+            <h4>1. Medical Entrance Exams (MBBS/BDS)</h4>
+            <ul>
+                <li><strong>NEET (National Eligibility cum Entrance Test):</strong> Mandatory for admission to MBBS, BDS, and other undergraduate medical courses in India.</li>
+                <li><strong>AIIMS MBBS:</strong> Admission to All India Institute of Medical Sciences (integrated into NEET).</li>
+                <li><strong>JIPMER:</strong> Admission to Jawaharlal Institute of Postgraduate Medical Education and Research (integrated into NEET).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>2. Allied Health Sciences</h4>
+            <ul>
+                <li><strong>NEET:</strong> For courses like B.Sc Nursing, BPT, and other paramedical programs in many colleges.</li>
+                <li><strong>State-Level Exams:</strong> Specific state medical entrance tests for allied health sciences.</li>
+                <li><strong>Private Institution Exams:</strong> E.g., Manipal Entrance Test (MET), CMC Vellore Entrance Test.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>3. Biotechnology and Research</h4>
+            <ul>
+                <li><strong>IISER Aptitude Test:</strong> For admission to integrated BS-MS programs in IISERs.</li>
+                <li><strong>CUET:</strong> For undergraduate courses in central universities.</li>
+                <li><strong>JEE Biotechnology:</strong> Some institutes accept JEE for B.Tech in Biotechnology.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>4. Veterinary Sciences</h4>
+            <ul>
+                <li><strong>NEET:</strong> Required for admission to BVSc (Bachelor of Veterinary Science).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>5. International Medical Exams</h4>
+            <ul>
+                <li><strong>MCAT:</strong> For admission to medical schools in the USA and Canada.</li>
+                <li><strong>BMAT:</strong> For medical schools in the UK and other countries.</li>
+                <li><strong>UCAT:</strong> For undergraduate medical and dental programs in the UK.</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <div class="containeryy">
+            <div class="row">
+                  <div class="col" id="company">
+                      <img src="LogoMakerCa-1731770225979__1_-removebg-preview.png" alt="" class="logo">
+                      <p>
+                        We are specialized in designings, make your business a brand.
+                        Try our premium services.
+                      </p>
+                      <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
+ 
+ 
+                  <div class="col" id="services">
+                     <h3>Services</h3>
+                     <div class="links">
+                        <a href="#">For Students</a>
+                        <a href="#">Exams</a>
+                        <a href="#">Resources</a>
+                        <a href="#">Entertainment</a>
+                     </div>
+                  </div>
+ 
+                  <div class="col" id="useful-links">
+                     <h3>Links</h3>
+                     <div class="links">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Our Policy</a>
+                        <a href="#">Help</a>
+                     </div>
+                  </div>
+ 
+                  <div class="col" id="contact">
+                      <h3>Contact</h3>
+                      <div class="contact-details">
+                         <i class="fa fa-location"></i>
+                         <p>KIET, Ghaziabad <br> UP, INDIA</p>
+                      </div>
+                      <div class="contact-details">
+                         <i class="fa fa-phone"></i>
+                         <p>+91-7914416162</p>
+                      </div>
+                  </div>
+            </div>
+ 
+            <div class="row">
+                  <div class="form">
+                    <form action="">
+                        <input type="text" placeholder="Email here...">
+                        <button><i class="fa fa-paper-plane"></i></button>
+                    </form>
+                  </div>
+            </div>
+ 
+        </div>
+     </footer>
+</body>
+</html>
+
+
